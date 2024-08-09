@@ -1,5 +1,6 @@
-<html>
+h<html>
 	<title>BSD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta
       name="description"
       content="Online Platform tower defense! and enjoyable " />
@@ -45,17 +46,26 @@
 </button>
 </center>
 <center>
-<button class="buttonBSD" role="button" onclick="Start()">Start Round</button>
+  <button class="buttonBSD">Maps:</button>
+<button class="buttonBSD" role="button" onclick="Startplain()">Plains</button>
+<button class="buttonBSD" role="button" onclick="tartbeach()">beach</button>
 </center>
 <center>
-<button class="buttonBSD" role="button">Coming Soon</button>
+
 </center>
+
+
+
+
+
+
+
 
 </div>
 </div>
-<script src="Classic/lib/jquery-3.3.1.min.js"></script>
+<script src="lib/jquery-3.3.1.min.js"></script>
 <script>
-function Start() {
+function Startplain() {
 if (window.confirm('click (Ok) to Create Round '))
 {
     console.log(".action('CreatedRound('ID_LOCAL')");
@@ -86,7 +96,45 @@ bitcoins = bitcoins + 0.00000091
 
     // Save the new amount of Bitcoins in the localStorage storage
     localStorage.setItem("bitcoins", "" + bitcoins + "")
-	window.location.href = 'Classic/BSD.html';
+   window.href ="Classic/BSD.html"
+}
+else
+{
+    console.log("Cancel.action('CreatedRound('ID_LOCAL')")
+}
+}
+function tartbeach() {
+if (window.confirm('click (Ok) to Create Round '))
+{
+    console.log(".action('CreatedRound('ID_LOCAL')");
+    
+bitcoins = bitcoins + 0.00000191
+
+    // Show the new number on the page
+    if(bitcoins > 1000000){
+
+      let bitcoinUnitNumber = bitcoins.optimizeNumber()
+      $(".bitcoinAmount").text(bitcoinUnitNumber)
+
+    }else if(bitcoins >= 1000){
+      $(".bitcoinAmount").text(bitcoins.toFixed(0))
+    }else if(bitcoins >= 1){
+      $(".bitcoinAmount").text(bitcoins.toFixed(2))
+    }else{
+      $(".bitcoinAmount").text(bitcoins.toFixed(8))
+    }
+
+    if((bitcoins * 100000000) < 1000000) {
+      $(".satoshiAmount").text(Math.round((bitcoins * 100000000)))
+    }else{
+
+      let satoshiUnitNumber = (bitcoins * 100000000).optimizeNumber()
+      $(".satoshiAmount").text(satoshiUnitNumber)
+    }
+
+    // Save the new amount of Bitcoins in the localStorage storage
+    localStorage.setItem("bitcoins", "" + bitcoins + "")
+   window.href ="beach/BSD.html"
 }
 else
 {
@@ -97,7 +145,7 @@ else
 <style>
 body {
 
-
+overflow-x: hidden;
 color: white;
 
 	place-items: center;
@@ -107,6 +155,20 @@ color: white;
 	overflow: hidden;
 	background: #111;
 }
+.box {
+background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+}  
 /* CSS */
 .bitcoin {
   padding: 0.6em 2em;
