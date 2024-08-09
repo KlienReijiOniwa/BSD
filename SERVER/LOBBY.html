@@ -47,8 +47,8 @@
 </center>
 <center>
   <button class="buttonBSD">Maps:</button>
-<button class="buttonBSD" role="button" onclick="Startplain()">Plains</button>
-<button class="buttonBSD" role="button" >beach(Fixing)</button>
+<button class="buttonBSD" role="button" onclick="plain()">Plains</button>
+<button class="buttonBSD" role="button" onclick="tartbeach">beach(Fixing)</button>
 </center>
 <center>
 
@@ -65,12 +65,12 @@
 </div>
 <script src="Classic/lib/jquery-3.3.1.min.js"></script>
 <script>
-function onclick="Startplain() {
+function plain() {
 if (window.confirm('click (Ok) to Create Round '))
 {
     console.log(".action('CreatedRound('ID_LOCAL')");
     
-bitcoins = bitcoins + 0.00000091
+bitcoins = bitcoins + 0.00000001
 
     // Show the new number on the page
     if(bitcoins > 1000000){
@@ -96,7 +96,8 @@ bitcoins = bitcoins + 0.00000091
 
     // Save the new amount of Bitcoins in the localStorage storage
     localStorage.setItem("bitcoins", "" + bitcoins + "")
-   window.location.href = "Classic/BSD.html";
+
+   window.location.href = "Classic/BSD.html" ;
 }
 else
 {
@@ -104,7 +105,7 @@ else
 }
 }
 function tartbeach() {
-alert("sorry this feature has been underfixing a malfuntion')
+alert("Error:404")
 }
 </script>
 <style>
