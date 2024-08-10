@@ -54,7 +54,87 @@
 
 </center>
 <script>
+function plain() {
+    
+ console.log("create('Round')") 
   
+  if (window.confirm("Click >OK< to create round"))
+  {
+bitcoins = bitcoins + 0.00000001
+
+    // Show the new number on the page
+    if(bitcoins > 1000000){
+
+      let bitcoinUnitNumber = bitcoins.optimizeNumber()
+      $(".bitcoinAmount").text(bitcoinUnitNumber)
+
+    }else if(bitcoins >= 1000){
+      $(".bitcoinAmount").text(bitcoins.toFixed(0))
+    }else if(bitcoins >= 1){
+      $(".bitcoinAmount").text(bitcoins.toFixed(2))
+    }else{
+      $(".bitcoinAmount").text(bitcoins.toFixed(8))
+    }
+
+    if((bitcoins * 100000000) < 1000000) {
+      $(".satoshiAmount").text(Math.round((bitcoins * 100000000)))
+    }else{
+
+      let satoshiUnitNumber = (bitcoins * 100000000).optimizeNumber()
+      $(".satoshiAmount").text(satoshiUnitNumber)
+    }
+
+    // Save the new amount of Bitcoins in the localStorage storage
+    localStorage.setItem("bitcoins", "" + bitcoins + "")
+
+window.location.href = "Classic/BSD.html"
+  }
+  else
+  {
+  console.log("delete('round')")  
+  }
+  }
+  
+function beach() {
+    
+ console.log("create('Round')") 
+  
+  if (window.confirm("Click >OK< to create round"))
+  {
+bitcoins = bitcoins + 0.00000001
+
+    // Show the new number on the page
+    if(bitcoins > 1000000){
+
+      let bitcoinUnitNumber = bitcoins.optimizeNumber()
+      $(".bitcoinAmount").text(bitcoinUnitNumber)
+
+    }else if(bitcoins >= 1000){
+      $(".bitcoinAmount").text(bitcoins.toFixed(0))
+    }else if(bitcoins >= 1){
+      $(".bitcoinAmount").text(bitcoins.toFixed(2))
+    }else{
+      $(".bitcoinAmount").text(bitcoins.toFixed(8))
+    }
+
+    if((bitcoins * 100000000) < 1000000) {
+      $(".satoshiAmount").text(Math.round((bitcoins * 100000000)))
+    }else{
+
+      let satoshiUnitNumber = (bitcoins * 100000000).optimizeNumber()
+      $(".satoshiAmount").text(satoshiUnitNumber)
+    }
+
+    // Save the new amount of Bitcoins in the localStorage storage
+    localStorage.setItem("bitcoins", "" + bitcoins + "")
+
+window.location.href = "beach/BSD.html"
+  }
+  else
+  {
+  console.log("delete('round')")  
+  }
+  }
 </script>
 
 
@@ -286,7 +366,7 @@ var Game = {}
 // Every constant variable is saved here
 Game.GameConst = {
   "priceMultiplier": 1.15,
-  "VERSION": "1.4.0"
+  "VERSION": "0.0.3 Aplha"
 }
 
 Game.units = [
@@ -737,5 +817,5 @@ var audio = document.getElementById("audio_player_html5");
     console.log("music play")
 }
 </script>
-<audio loop hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="music/lobby.mp3" type="audio/mp3"></audio>
+<audio hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="music/lobby.mp3" type="audio/mp3"></audio>
 </html>
