@@ -46,14 +46,16 @@
 </button>
 </center>
 <center>
-  <button class="buttonBSD">Maps:</button>
-<button class="buttonBSD" role="button" onclick="plain()">Plains</button>
-<button class="buttonBSD" role="button" onclick="tartbeach">beach(Fixing)</button>
+  <button class="buttonBSD"><h2>Maps:</h2></button>
+<button class="buttonBSD"  onclick="plain()">🌿Plains🌿</button>
+<button class="buttonBSD"  onclick="beach()">🏖️beach🏖️</button>
 </center>
 <center>
 
 </center>
-
+<script>
+  
+</script>
 
 
 
@@ -64,50 +66,7 @@
 </div>
 </div>
 <script src="Classic/lib/jquery-3.3.1.min.js"></script>
-<script>
-function plain() {
-if (window.confirm('click (Ok) to Create Round '))
-{
-    console.log(".action('CreatedRound('ID_LOCAL')");
-    
-bitcoins = bitcoins + 0.00000001
 
-    // Show the new number on the page
-    if(bitcoins > 1000000){
-
-      let bitcoinUnitNumber = bitcoins.optimizeNumber()
-      $(".bitcoinAmount").text(bitcoinUnitNumber)
-
-    }else if(bitcoins >= 1000){
-      $(".bitcoinAmount").text(bitcoins.toFixed(0))
-    }else if(bitcoins >= 1){
-      $(".bitcoinAmount").text(bitcoins.toFixed(2))
-    }else{
-      $(".bitcoinAmount").text(bitcoins.toFixed(8))
-    }
-
-    if((bitcoins * 100000000) < 1000000) {
-      $(".satoshiAmount").text(Math.round((bitcoins * 100000000)))
-    }else{
-
-      let satoshiUnitNumber = (bitcoins * 100000000).optimizeNumber()
-      $(".satoshiAmount").text(satoshiUnitNumber)
-    }
-
-    // Save the new amount of Bitcoins in the localStorage storage
-    localStorage.setItem("bitcoins", "" + bitcoins + "")
-
-   window.location.href = "Classic/BSD.html" ;
-}
-else
-{
-    console.log("Cancel.action('CreatedRound('ID_LOCAL')")
-}
-}
-function tartbeach() {
-alert("Error:404")
-}
-</script>
 <style>
 body {
 
@@ -327,7 +286,7 @@ var Game = {}
 // Every constant variable is saved here
 Game.GameConst = {
   "priceMultiplier": 1.15,
-  "VERSION": "0.0.2 Alpha"
+  "VERSION": "1.4.0"
 }
 
 Game.units = [
@@ -778,5 +737,5 @@ var audio = document.getElementById("audio_player_html5");
     console.log("music play")
 }
 </script>
-<audio hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="https://pouch.jumpshare.com/preview/2HFbIPptjPxY7p5TU9RZ5pEHL_EyofqX0vWpK5zfTO584xTF1QiaXbxjWz4UeVpoGqXOonQVa5Wj2tocqHaedu0IkDNEDFfni1mWMv_pCugQS-C9QzX7pN_uCrinuxG53_eF-cF5stIidgoOW8TDtm6yjbN-I2pg_cnoHs_AmgI.mp3" type="audio/mp3"></audio>
+<audio hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="music/lobby.mp3" type="audio/mp3"></audio>
 </html>
