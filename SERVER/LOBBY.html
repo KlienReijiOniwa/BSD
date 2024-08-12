@@ -1,5 +1,5 @@
 <html>
-	<title>BSD</title>
+	<title>BALL STRIKE DEFENDER</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta
       name="description"
@@ -89,9 +89,8 @@
     <kbe>(better engine better fps)</kbe>
   </button>
 <button class="buttonBSD">
- unable to connect custo, still underdeveloped 
+  
 </button>
-	
 </center>
 </page>
 
@@ -133,6 +132,7 @@ function opentab() {
 document.getElementById("custompagecreate").style.display = "block"
   document.getElementById("mainpage").style.display = "none"
 }
+
 function plain() {
     
  console.log("create('Round')") 
@@ -166,7 +166,7 @@ bitcoins = bitcoins + 0.00000001
     // Save the new amount of Bitcoins in the localStorage storage
     localStorage.setItem("bitcoins", "" + bitcoins + "")
 
-window.location.href = "https://klienreijioniwa.github.io/BSD/SERVER/Classic/WORLD1/BSD.html"
+window.location.href = "Classic/WORLD1/BSD.html"
   }
   else
   {
@@ -179,10 +179,10 @@ window.location.href = "https://klienreijioniwa.github.io/BSD/SERVER/Classic/WOR
 
 
 
-
-
 </div>
 </div>
+
+
 <script src="Classic/lib/jquery-3.3.1.min.js"></script>
 
 <style>
@@ -368,14 +368,13 @@ background: linear-gradient(
   border-radius: 10px;
 }
 </style>
-<script>
-var bitcoins = 0
+<script>var bitcoins = 0
 var bitcoinRate = 0
 
 // Every item in the game
 // TODO: items should be part of the Game variable
 var items = [
-  
+ 
 ]
 
 // Rate is null (at the beginning)
@@ -420,7 +419,7 @@ var Game = {}
 // Every constant variable is saved here
 Game.GameConst = {
   "priceMultiplier": 1.15,
-  "VERSION": "1.4.0"
+  "VERSION": "0.1.0"
 }
 
 Game.units = [
@@ -809,7 +808,7 @@ $(document).ready(function () {
 
       // Changing the Bitcoins amount
       // Rounding the Bitcoin number at specific values
-      if(bitcoins > 1e6){try
+      if(bitcoins > 1e6){
 
         let bitcoinUnitNumber = bitcoins.optimizeNumber()
         $(".bitcoinAmount").text(bitcoinUnitNumber)
