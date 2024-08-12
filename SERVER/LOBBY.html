@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- open graph metadata -->
-    <meta property="og:title" content="BallStrikeDefender" />
+    <meta property="og:title" content="Ball Strike Defender" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://klienreijioniwa.github.io/BSD/" />
     <meta property="og:image" content="https://raw.githubusercontent.com/KlienReijiOniwa/HLSIM/main/00b3c145f1408cc190c853a16890fce80ad2389eda39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd80709763616309853142b59926af015b18298.png" />
@@ -32,7 +32,8 @@
 <div class="gameFullContent">
         <div class="leftContainer">
             <span class="version"></span>
-<page id="serverpage-692848">
+<page>
+  <div id="mainpage">
 <center>
   <h1>Lobby</h1>
 </center>
@@ -46,47 +47,96 @@
 </button>
 </center>
 <center>
-<button class="buttonBSD"  onclick="customcreate()">Create Custom</button>
-  <button class="buttonBSD"><h2>Worlds:</h2></button>
-<button class="buttonBSD"  onclick="plain()">🌿Plains🌿</button>
-<button class="buttonBSD"  onclick="beach()">🏖️beach🏖️</button>
-</center>
+<button class="buttonBSD"  onclick="Rank()">Rank Play</button>
+<button onclick="opentab()" class="buttonBSD">Custom</button>
+<button onclick="Settings()" class="buttonBSD">Settings</button>
+
+</div>
+</page>
+
+<page id="custompagecreate">
 <center>
-
+  <h2>Custom Create</h2>
+  <button class="buttonBSD" style="height:200px;">
+    <h1>CUSTOM</h1>
+  </button>
+  <button class="buttonBSD" style="height:100px;">
+    <h4>Custom Name:</h4>
+    <input type="text" value="My Custom">
+  </button>
+  <button class="buttonBSD">
+    <label>Engine</label>
+    <select name="TextureType" id="">
+      <option value="">GoogleEngine</option>
+      <option value="">Github Engine</option>
+      <option value="">FireFox Engine 4.5V</option>
+      <option value="">MekoNetwork Engine</option>
+      <option value="">Local Browser</option>
+      <option value="">Gitlab Engine 6.3</option>
+      <option value="">PenutEngineDesktop 1.0</option>
+      <option value="">Caff Engine</option>
+      <option value="">Meta Engine</option>
+      <option value="">Ecosystem Engine (BETA)</option>
+      
+      <option value="">Hylox 1.0</option>
+      <option value="">Hylox 2.0</option>
+      <option value="">Hylox 3.0</option>
+      <option value="">Hylox 4.0</option>
+      <option value="">Carbrain Engine 1</option>
+      
+    </select>
+    <figure></figure>
+    <kbe>(better engine better fps)</kbe>
+  </button>
+<button class="buttonBSD">
+  
+</button>
 </center>
 </page>
-<page id="custompage">
+
+<div id="rankpage">
   <center>
-    <h1>Create Custom:</h1>
-    <button class="buttonBSD" style="height:200px">
-      
- <center>
-   <h2>Round</h2>
- </center>
-    </button>
-    <button class="buttonBSD">
-      <label>Name : <input type="text" value="My Round"></label>
-    </button>
-
-      <button class="buttonBSD" onclick="window.location.href = 'https://klienreijioniwa.github.io/BSD/SERVER/CUSTOM/INFINITY/BSD.html">Infinite waves</button>
-        <button class="buttonBSD" >Sandbox(Still Developed)</button>
-      <button class="buttonBSD" >Normal(Fixing)</button>
-      
+    <h1>Types of Map:</h1>
+    <button class="buttonBSD" onclick="plain()">🌿Grass island🌿</button>
+    <button class="buttonBSD">🏖️Beach🏖️(Fixing Map)</button>
   </center>
-</page>
-<script>
-document.getElementById("custompage").style.display = "none"
+</div>
+<div id="Settings">
+  <center>
+    <h2>Settings</h2>
+    <button class="buttonBSD">
+      <label>Music</label>
+      <figure></figure>
+     <input type="range" name="ok" id="ok" value="90" />
+    </button>
 
-function customcreate() {
-  document.getElementById("serverpage-692848").style.display = "none"
-document.getElementById("custompage").style.display = "block"
-console.log("User.create('World')")
+  </center>
+</div>
+<script>
+
+document.getElementById("custompagecreate").style.display = "none"
+document.getElementById("rankpage").style.display = "none"
+document.getElementById("Settings").style.display = "none"
+
+function Settings() {
+document.getElementById("mainpage").style.display = "none"
+document.getElementById("Settings").style.display = "block"
+}
+
+function Rank() {
+document.getElementById("rankpage").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
+}
+
+function opentab() {
+document.getElementById("custompagecreate").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
 }
 function plain() {
     
  console.log("create('Round')") 
   
-  if (window.confirm("Click >OK< to create round"))
+  if (window.confirm("Click [OK] to create round"))
   {
 bitcoins = bitcoins + 0.00000001
 
@@ -115,48 +165,7 @@ bitcoins = bitcoins + 0.00000001
     // Save the new amount of Bitcoins in the localStorage storage
     localStorage.setItem("bitcoins", "" + bitcoins + "")
 
-window.location.href = "Classic/BSD.html"
-  }
-  else
-  {
-  console.log("delete('round')")  
-  }
-  }
-  
-function beach() {
-    
- console.log("create('Round')") 
-  
-  if (window.confirm("Click >OK< to create round"))
-  {
-bitcoins = bitcoins + 0.00000001
-
-    // Show the new number on the page
-    if(bitcoins > 1000000){
-
-      let bitcoinUnitNumber = bitcoins.optimizeNumber()
-      $(".bitcoinAmount").text(bitcoinUnitNumber)
-
-    }else if(bitcoins >= 1000){
-      $(".bitcoinAmount").text(bitcoins.toFixed(0))
-    }else if(bitcoins >= 1){
-      $(".bitcoinAmount").text(bitcoins.toFixed(2))
-    }else{
-      $(".bitcoinAmount").text(bitcoins.toFixed(8))
-    }
-
-    if((bitcoins * 100000000) < 1000000) {
-      $(".satoshiAmount").text(Math.round((bitcoins * 100000000)))
-    }else{
-
-      let satoshiUnitNumber = (bitcoins * 100000000).optimizeNumber()
-      $(".satoshiAmount").text(satoshiUnitNumber)
-    }
-
-    // Save the new amount of Bitcoins in the localStorage storage
-    localStorage.setItem("bitcoins", "" + bitcoins + "")
-
-window.location.href = "beach/BSD.html"
+window.location.href = "Classic/WORLD1/BSD.html"
   }
   else
   {
@@ -176,6 +185,7 @@ window.location.href = "beach/BSD.html"
 <script src="Classic/lib/jquery-3.3.1.min.js"></script>
 
 <style>
+
 body {
 
 
@@ -203,6 +213,21 @@ background: linear-gradient(
   );
 }  
 /* CSS */
+.box-58 {
+background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+}  
+}
 .bitcoin {
   padding: 0.6em 2em;
   border: none;
@@ -394,7 +419,7 @@ var Game = {}
 // Every constant variable is saved here
 Game.GameConst = {
   "priceMultiplier": 1.15,
-  "VERSION": "0.1.0"
+  "VERSION": "1.4.0"
 }
 
 Game.units = [
@@ -783,7 +808,7 @@ $(document).ready(function () {
 
       // Changing the Bitcoins amount
       // Rounding the Bitcoin number at specific values
-      if(bitcoins > 1e6){
+      if(bitcoins > 1e6){try
 
         let bitcoinUnitNumber = bitcoins.optimizeNumber()
         $(".bitcoinAmount").text(bitcoinUnitNumber)
