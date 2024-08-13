@@ -48,55 +48,13 @@
 </center>
 <center>
 <button class="buttonBSD"  onclick="Rank()">Rank Play</button>
-<button onclick="opentab()" class="buttonBSD">Custom</button>
-<button onclick="Settings()" class="buttonBSD">Settings</button>
+
   <button class="buttonBSD">
     <label>Copyrighted@ 2024-2024 Ball Strike Defender • MekoNetwork • Resources used having a permit usage from github</label>
   </button>
 </div>
 </page>
 
-<page id="custompagecreate">
-<center>
-  <h2>Custom Create</h2>
-  <button class="buttonBSD" style="height:200px;">
-    <h1>CUSTOM</h1>
-  </button>
-  <button class="buttonBSD" style="height:100px;">
-    <h4>Custom Name:</h4>
-    <input type="text" value="My Custom">
-  </button>
-  <button class="buttonBSD">
-    <label>Engine</label>
-    <select name="TextureType" id="">
-      <option value="">GoogleEngine</option>
-      <option value="">Github Engine</option>
-      <option value="">FireFox Engine 4.5V</option>
-      <option value="">MekoNetwork Engine</option>
-      <option value="">Local Browser</option>
-      <option value="">Gitlab Engine 6.3</option>
-      <option value="">PenutEngineDesktop 1.0</option>
-      <option value="">Caff Engine</option>
-      <option value="">Meta Engine</option>
-      <option value="">Ecosystem Engine (BETA)</option>
-      
-      <option value="">Hylox 1.0</option>
-      <option value="">Hylox 2.0</option>
-      <option value="">Hylox 3.0</option>
-      <option value="">Hylox 4.0</option>
-      <option value="">Carbrain Engine 1</option>
-      
-    </select>
-    <figure></figure>
-    <kbe>(better engine better fps)</kbe>
-  </button>
-<button class="buttonBSD">
-  Type:
-</button>
-
-<button class="buttonBSD" onclick="customplay()">infinite Waves</button>
-</center>
-</page>
 
 <div id="rankpage">
   <center>
@@ -106,133 +64,17 @@
 
   </center>
 </div>
-<div id="Settings">
-  <center>
-    <h2>Settings</h2>
-    <button class="buttonBSD">
-      <label>Music</label>
-      <figure></figure>
-     <input type="range" name="ok" id="ok" value="90" />
-    </button>
-<button class="buttonBSD">
-  <label>Battery Saver</label>
-  <figure></figure>
-  <input type="checkbox" name="" id="" value="" />
-</button>
-<button class="buttonBSD">
-  <label>MB Usage</label>
-  <figure></figure>
- <select name="" id="">
-   <option value="">30MB</option>
-   <option value="">100MB</option>
-
- </select> 
-</button></button>
-<button class="buttonBSD">
-  <label>FPS</label>
-  <figure></figure>
- <select name="" id="">
-   <option value="">60FPS Default</option>
-
-   <option value="">30FPS</option>
-
- </select> 
-</button>
-  <button class="buttonBSD">
-    <label>Global Server</label>
-    <figure></figure>
- <select name="" id="">
-   <option value="">ASIA</option>
-   <option value="">AFR</option>
-   <option value="">UN</option>
-   <option value="">UK</option>
- </select> 
-  </button>
-  <button class="buttonBSD">
-    <label>Language</label>
-    <figure></figure>
-<div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-  </button>
-  <button class="buttonBSD">
-    <label>Hyper-Wifi</label>
-    <figure>
-      
-      
-    </figure>
-    <select name="" id="">
-      <option value="">FALSE</option>
-           <option value="">TRUE</option>
-    </select>
-  </button>
-  <button class="buttonBSD">
-    <label>Data Usage Per:1KB</label>
-
-  </button>
-  <button class="buttonBSD">
-    <label>Engine</label>
-    <select name="TextureType" id="">
-      <option value="">GoogleEngine</option>
-      <option value="">Github Engine</option>
-      <option value="">FireFox Engine 4.5V</option>
-      <option value="">MekoNetwork Engine</option>
-      <option value="">Local Browser</option>
-      <option value="">Gitlab Engine 6.3</option>
-      <option value="">PenutEngineDesktop 1.0</option>
-      <option value="">Caff Engine</option>
-      <option value="">Meta Engine</option>
-      <option value="">Ecosystem Engine (BETA)</option>
-      
-      <option value="">Hylox 1.0</option>
-      <option value="">Hylox 2.0</option>
-      <option value="">Hylox 3.0</option>
-      <option value="">Hylox 4.0</option>
-      <option value="">Carbrain Engine 1</option>
-      
-    </select>
-    <figure></figure>
-    <kbe>(better engine better fps)</kbe>
-  </button>
-  <button class="buttonBSD">
-    <label>Average FPS:60</label>
-  </button>
-<button class="buttonBSD" >
-  <label>Reset Account</label>
-  <figure></figure>
-  <input type="submit" value="Reset" onclick="RESETACCOUNT()">
-</button>
-  </center>
-  
-</div>
-
 <script>
 
-document.getElementById("custompagecreate").style.display = "none"
-document.getElementById("rankpage").style.display = "none"
-document.getElementById("Settings").style.display = "none"
 
-function Settings() {
-document.getElementById("mainpage").style.display = "none"
-document.getElementById("Settings").style.display = "block"
-}
+document.getElementById("rankpage").style.display = "none"
+
 
 function Rank() {
 document.getElementById("rankpage").style.display = "block"
   document.getElementById("mainpage").style.display = "none"
 }
 
-function opentab() {
-document.getElementById("custompagecreate").style.display = "block"
-  document.getElementById("mainpage").style.display = "none"
-}
 
 function plain() {
     
@@ -281,39 +123,6 @@ window.location.href = "Classic/WORLD1/BSD.html"
   
   
   
-function RESETACCOUNT() {
-    
- console.log("reset.send.action.button('user.window')") 
-  
-  if (window.confirm("Are you Sure You Want to reset the Account [Click ({[ > OK < ]})"))
-  {
-Game.resetGame()
-  }
-  else
-  {
-  console.log("cancel('reset.alert.svg')")  
-  }
-  }
- 
- 
-function customplay() {
-    
- console.log("create('customplaydefualt')") 
-  
-  if (window.confirm("Click Ok to start this custom round"))
-  {
-    
-   document.getElementById("rankpage").style.display = "none"
-   
-   
-window.location.href = "Classic/CUSTOM/BSD.html"
-}
-  else
-  {
-  console.log("delete('customplaydefualt')")  
-  }
-  }
- 
   
 </script>
 
@@ -324,7 +133,7 @@ window.location.href = "Classic/CUSTOM/BSD.html"
 </div>
 
 
-<script src="Classic/lib/jquery-3.3.1.min.js"></script>
+<script src="lib/jquery-3.3.1.min.js"></script>
 
 <style>
 
