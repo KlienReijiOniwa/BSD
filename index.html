@@ -1,13 +1,11 @@
 <html lang="en" >
-	<head>
-		<title>BALL STRIKE DEFENDER</title>
-   <meta name="google-site-verification" content="mfL7X8QV4uvLoRzVLHX_bXLtEiLdTanYXOCpEotxO7Q" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BALL STRIKE DEFENDER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta
       name="description"
-      content="BALL STRIKE DFENDER | A Game Online of intelligence and strategy and full of fun game modes and events and more. BSD is an online tower defense and you can grind here your xps and grind your stragety. and discover easter eggs. and more!" />
+      content="Online Platform tower defense! and enjoyable " />
     <meta name="theme-color" content="#6045a0" />
-    <meta name="keywords" content="github, Ball strike defender github, ball strike defnder, Tower Defense, BSD, Ball Strike Defender, Ballstrikedefender, BSD, BSD new updated, BSD game, BallStrikeDefender GAme, BSD 2024, Frank, jimuel," />
+    <meta name="keywords" content="Tower Defense, BSD, Ball Strike Defender, Ballstrikedefender, BSD, BSD new updated, BSD game, BallStrikeDefender GAme, BSD 2024, Frank, jimuel," />
     <meta name="author" content="KlienReijiOniwa" />
 <link rel="icon" href=
 "https://raw.githubusercontent.com/KlienReijiOniwa/BSD/main/SERVER/image/Untitled%20design_20240815_194013_0000.png" 
@@ -17,13 +15,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- open graph metadata -->
-    <meta property="og:title" content="BALL STRIKE DEFENDER" />
+    <meta property="og:title" content="Ball Strike Defender" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://klienreijioniwa.github.io/BSD/" />
     <meta property="og:image" content="https://raw.githubusercontent.com/KlienReijiOniwa/BSD/main/SERVER/image/Untitled%20design_20240815_194013_0000.png" />
     <meta
       property="og:description"
-      content="BALL STRIKE DFENDER | A Game Online of intelligence and strategy and full of fun game modes and events and more. BSD is an online tower defense and you can grind here your xps and grind your stragety. and discover easter eggs. and more!" />
+      content="BSD is an online tower defense and you can grind here your xps and grind your stragety. and discover easter eggs. and more!" />
 
     <!-- progressive web app manifest-->
     <link rel="manifest" href="manifest.json" />
@@ -32,7 +30,7 @@
     <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
-</head>
+
 
 <div class="gameFullContent">
         <div class="leftContainer">
@@ -50,17 +48,27 @@
   <h1>EXP:<span class="satoshiAmount">0</span></h1>
 </button>
 <button class="buttonBSD" role="button">
-  <h2>COINS:<spa class="bitcoinAmount">0</span></h2>
+  <h2>BCOINS:<spa class="bitcoinAmount">0</span></h2>
 </button>
 </center>
 <center>
-<button class="buttonBSD"  onclick="newupdate()">Check Updates</button>
+<button class="buttonBSD"  onclick="newupdate()">Check Mails (1)</button>
 
   
 <button class="buttonBSD"  onclick="Rank()">Rank Play</button>
-<button class="buttonBSD"  onclick="Endless()">Hardcore Play</button>
+
+<button class="buttonBSD"  onclick="createWorld()">Create custom</button>
+  
+<button class="buttonBSD"  onclick="joinmap()">Mining Area</button>
+  
+  
+<button class="buttonBSD"  onclick="enchantable()">Enchantments</button>
+  
 <button class="buttonBSD"  onclick="ohsi()">Settings</button>
-  <button class="buttonBSD">
+<h2>Social Media:</h2>
+<button class="buttonBSD"  onclick="window.location.href='https://www.facebook.com/profile.php?id=61564818171656&mibextid=ZbWKwL'">Facebook</button>
+
+<button class="buttonBSD">
     <label>Copyrighted @ 2024-2024 Ball Strike Defender • MekoNetwork • Resources used having a permit usage from github [ 2024 - 2024 ]</label>
   </button>
 
@@ -81,9 +89,30 @@
 <button class="buttonBSD" onclick="back1()">Back</button>
 </center>
   <center>
-<h1>Updates</h1>
+<h1>Mails</h1>
   </center>
-	  
+  <h3>UPDATE 2</h3>
+  <kbd>August 16 2024</kbd>
+  <li>Added Music Mute button added</li>
+  <li>ADDED:[ENCHANTMENTS: Penaty, Protection, Entangle, Flame Striker ]</li>
+  <li>Texture Fixing</li>
+  <li>Added Custom Create</li>
+  <li>Added Anti Game low FPS</li>
+  <li>Fixed Maximum Cache to 10MB</li>
+  <li>Save/load Bug Fixed</li>
+<li>Fixed Infinity</li>
+  <li>Enhance Game Quality </li>
+<li>RNG More Advanced</li>
+  <li>Currency Changes</li>
+<li>Buff:Blob(enhanced spawn rate)</li>
+  <li>Exp Sytem Enhanced</li>
+<li>Enemy Groupers +90% Spawn Rate</li>
+  <li>All Turret Damage +10% Event(End:42Hours)</li>
+<li>Mining(Mines BCOINS and EXP)</li>
+  <li>Fixed 2 Bugs</li>
+<li>40 limiter Removed</li>
+<li>Texture Revamp</li>
+
   <h3>Patch 1</h3>
   <kbd>August 16 2024</kbd>
   <li>Fixed Boss Spawn Rate</li>
@@ -129,7 +158,8 @@
       <figure></figure>
     <select name="" id="">
       <option value="">Google Browser Engine</option>
-      
+      <option value="" disabled="">Local Browser</option>
+ 
     </select>  
     </button>
     <button class="buttonBSD" onclick="saveChanges">
@@ -137,30 +167,174 @@
     </button>
   </center>
 </div>
+<div id="enchantments">
+  <center>
+    <button class="buttonBSD" onclick="back2()">Back</button>
+  </center>
+  <fieldset class="normalcard">
+    <h1>Penaty</h1>
+<button class="texture-tag-normal">Unit</button> <button class="texture-tag-turrerts">Turrets</button>
+   <p>It Plus the penetration +21% and plus the damage of the big boy turrets </p>
+<button style="width:100%;" class="purchaseItem" id="BSD_ENCHANT1" data-price="0.00000600" data-bits-per-sec="0.00000000">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Enchant</h2>
+                                  <p class="itemPrice">0.00000600 BCOIN</p>
+            
+                </button>
+  </fieldset>
+    <fieldset class="normalcard">
+    <h1>Protection</h1>
+<button class="texture-tag-normal">Spell</button> <button class="texture-tag-turrerts">Turrets</button>
+   <p>Minus The Enemies Damage by +5%. and it doubles per spent time in a match for 30min</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_ENCHANT2" data-price="0.00005600" data-bits-per-sec="0.00000000">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Enchant</h2>
+                                  <p class="itemPrice">0.00005600 BCOIN</p>
+            
+                </button>
+  </fieldset>
+    <fieldset class="normalcard">
+    <h1>Entangle</h1>
+<button class="texture-tag-normal">Spell</button> <button class="texture-tag-turrerts">Strategy</button>
+   <p>this enchant the path to slow the enemies by 10% and can usefull for boses or fast balls</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_ENCHANT3" data-price="0.00010000" data-bits-per-sec="0.00000000">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Enchant</h2>
+                                  <p class="itemPrice">0.00010000 BCOIN</p>
+            
+                </button>
+  </fieldset>
+    <fieldset class="normalcard">
+    <h1>Flame Striker</h1>
+<button class="texture-tag-normal">Spell</button> <button class="texture-tag-turrerts">Strategy</button>
+   <p>Enchanting your units with this.. they can burn they're enemies by 60% damage and if hit 2 times plus the damage by 20%</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_ENCHANT4" data-price="0.77000000" data-bits-per-sec="0.00000000">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Enchant</h2>
+                                  <p class="itemPrice">0.77000000 BCOIN</p>
+            
+                </button>
+  </fieldset>
+  
+  
+  
+  
+  
+  
+  
+</div>
+<div id="customcreateot">
+  <center>
+  <button class="buttonBSD" style="height:300px">My Match</button>
+  <button class="buttonBSD">
+    <label>Modes:</label>
+    <figure></figure>
+   <select name="" id="">
+     <option value="">Simple</option>
+     <option value="">Hardcore</option>
+     <option value="">Infinite</option>
+     <option value="" disabled="">Sandbox(Premium)</option>
+     opt+
+   </select>
+  </button>
+  
+<button class="buttonBSD"  onclick="Endless()">Play</button>
+</center>
+</div>
+<div id="pagemap2">
+  <center>
+  <button class="buttonBSD" onclick="back3()">Back</button>
+</center>
+  <fieldset class="normalcard">
+    <h1>Generator I</h1>
+<button class="texture-tag-normal">LVL 1</button> <button class="texture-tag-turrerts">Generator</button>
+   <p>This Generator Grind 1 BCOINS and Exp Per Second</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_GENERATOR1" data-price="0.00000999" data-bits-per-sec="0.00000001">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Purchase</h2>
+                                  <p class="itemPrice">0.00000999 BCOIN</p>
+            
+                </button>
+  </fieldset>
+  <fieldset class="normalcard">
+    <h1>Generator II</h1>
+<button class="texture-tag-normal">LVL 5</button> <button class="texture-tag-turrerts">Generator</button>
+   <p>This Genrator Grind 10 BCOINS and EXP Per Second</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_GENERATOR2" data-price="0.05100000" data-bits-per-sec="0.00000010">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Purchase</h2>
+                                  <p class="itemPrice">0.05100000 BCOIN</p>
+            
+                </button>
+  </fieldset>
+  <fieldset class="normalcard">
+    <h1>Generator III</h1>
+<button class="texture-tag-normal">LVL 10</button> <button class="texture-tag-turrerts">Generator</button>
+   <p>This Genrator Grind 15 BCOINS and EXP Per Second</p>
+<button style="width:100%;" class="purchaseItem" id="BSD_GENERATOR3" data-price="5.00000000" data-bits-per-sec="0.00000015">
+
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Purchase</h2>
+                                  <p class="itemPrice">5.00000000 BCOIN</p>
+            
+                </button>
+  </fieldset>
+</div>
 <script>
 
 document.getElementById("Settingsme").style.display = "none"
 document.getElementById("rankpage").style.display = "none"
 document.getElementById("details").style.display = "none"
+document.getElementById("enchantments").style.display = "none"
+document.getElementById("customcreateot").style.display = "none"
+document.getElementById("pagemap2").style.display = "none"
 
+function back3() {
+document.getElementById("pagemap2").style.display = "none"
+  document.getElementById("mainpage").style.display = "block"
+}
 
+function joinmap() {
+document.getElementById("pagemap2").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
+}
+
+function createWorld() {
+document.getElementById("customcreateot").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
+}
 function Rank() {
 document.getElementById("rankpage").style.display = "block"
   document.getElementById("mainpage").style.display = "none"
 }
-
-
 function plain() {
     
  console.log("create('Round')") 
   
   if (window.confirm("Click [OK] to create round"))
   {
-    
-   document.getElementById("rankpage").style.display = "none"
+document.getElementById("rankpage").style.display = "none"
 
-
-    
 bitcoins = bitcoins + 0.00000001
 
     // Show the new number on the page
@@ -198,7 +372,6 @@ document.getElementById("rankpage").style.display = "none"
   }
   }
   
-  
 function Endless() {
 window.location.href = "https://klienreijioniwa.github.io/BSD/SERVER/Classic/CUSTOM/BSD.html"
 }
@@ -234,9 +407,18 @@ document.getElementById("rankpage").style.display = "none"
 
   }
   }
-function saveChanges(){
+function saveChanges() {
     window.location.reload();
 } 
+function enchantable() {
+document.getElementById("enchantments").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
+}
+function back2() {
+document.getElementById("enchantments").style.display = "none"
+  document.getElementById("mainpage").style.display = "block"
+
+}
 </script>
 
 
@@ -261,6 +443,51 @@ color: white;
 	transition: background var(--transition);
 	
 	background: #111;
+}
+.texture-tag-turrerts {
+background-color: grey;
+  border-radius: 20px;
+  border: 0px;
+  padding: 5px;
+  color: white;
+}
+.texture-tag-normal {
+  background-color: blue;
+  border-radius: 20px;
+  border: 0px;
+  padding: 5px;
+  color: white;
+}
+.purchaseItem:hover{
+    background: ;
+    cursor: pointer;
+}
+.normalcard {
+background-color: white;
+color: black;
+border-radius: 10px;
+border-color: orange;
+margin: 7px;
+align-self: center;
+}
+.epiccard {
+content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .box {
 background: linear-gradient(
@@ -437,7 +664,42 @@ var bitcoinRate = 0
 // Every item in the game
 // TODO: items should be part of the Game variable
 var items = [
- 
+   {
+    "name": "BSD_ENCHANT1",
+    "price": "0.00000600"
+
+  },
+   {
+    "name": "BSD_ENCHANT2",
+    "price": "0.00005600"
+
+  },
+   {
+    "name": "BSD_ENCHANT3",
+    "price": "0.00010000"
+
+  },
+   {
+    "name": "BSD_ENCHANT4",
+    "price": "0.77000000"
+
+  },
+  //GENERATORS SERVERBASE//
+   {
+    "name": "BSD_GENERATOR1",
+    "price": "0.00000999"
+
+  },
+   {
+    "name": "BSD_GENERATOR2",
+    "price": "0.05100000"
+
+  },
+   {
+    "name": "BSD_GENERATOR3",
+    "price": "5.00000000"
+
+  },
 ]
 
 // Rate is null (at the beginning)
@@ -482,7 +744,7 @@ var Game = {}
 // Every constant variable is saved here
 Game.GameConst = {
   "priceMultiplier": 1.15,
-  "VERSION": "[UPDATE 1]"
+  "VERSION": ": [UPDATE 2]"
 }
 
 Game.units = [
@@ -537,7 +799,7 @@ Game.setPriceAtGameBeginning = function (element, price, itemAmount) {
   var calculation = (parseFloat(price) * Math.pow(multiplier, parseInt(itemAmount))).toFixed(8)
 
   // Showing the actual price
-  element.children()[2].textContent = calculation + " Bitcoins"
+  element.children()[2].textContent = calculation + " "
 
   // Set the data-price attribute with the new price
   element.attr("data-price", calculation.toString())
@@ -673,7 +935,7 @@ Game.setNewPrice = function()
         var calculation = (parseFloat(items[i].price) * Math.pow(multiplier, parseInt(itemAmount))).toFixed(8)
 
         // Showing the actual price
-        $element.children()[2].textContent = calculation + " Bitcoins"
+        $element.children()[2].textContent = calculation + " BCOINS"
 
         // Set the data-price attribute with the new price
         $element.attr("data-price", calculation.toString())
@@ -933,5 +1195,5 @@ var audio = document.getElementById("audio_player_html5");
     console.log("music play")
 }
 </script>
-<audio hidden=""autoplay="" controls="" loop id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="SERVER/music/lobby.mp3" type="audio/mp3"></audio>
+<audio hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="SERVER/music/lobby.mp3" type="audio/mp3"></audio>
 </html>
