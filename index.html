@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta
       name="description"
-      content="BSD is an Online tower defense and you can grind here your xps and grind your stragety. and discover easter eggs. and more!" />
+      content="Online Platform tower defense! and enjoyable " />
     <meta name="theme-color" content="#6045a0" />
     <meta name="keywords" content="Tower Defense, BSD, Ball Strike Defender, Ballstrikedefender, BSD, BSD new updated, BSD game, BallStrikeDefender GAme, BSD 2024, Frank, jimuel," />
     <meta name="author" content="KlienReijiOniwa" />
@@ -53,25 +53,23 @@
 </center>
 <center>
 <button class="buttonBSD"  onclick="newupdate()">Check Mails (1)</button>
+<button class="buttonBSD"  onclick="event9()">
+  <b>Events</b>
+</button>
 
-  
+
+
 <button class="buttonBSD"  onclick="Rank()">Rank Play</button>
-
 <button class="buttonBSD"  onclick="createWorld()">Create custom</button>
-  
 <button class="buttonBSD"  onclick="joinmap()">Mining Area</button>
-  
-  
 <button class="buttonBSD"  onclick="enchantable()">Enchantments</button>
-  
 <button class="buttonBSD"  onclick="ohsi()">Settings</button>
+
 <h2>Social Media:</h2>
 <button class="buttonBSD"  onclick="window.location.href='https://www.facebook.com/profile.php?id=61564818171656&mibextid=ZbWKwL'">Facebook</button>
-
 <button class="buttonBSD">
     <label>Copyrighted @ 2024-2024 Ball Strike Defender • MekoNetwork • Resources used having a permit usage from github [ 2024 - 2024 ]</label>
   </button>
-
 </div>
 </page>
 
@@ -91,8 +89,12 @@
   <center>
 <h1>Mails</h1>
   </center>
+  <h3>NEW EVENT!</h3>
+  <kbd>August 24 2024</kbd>
+  <li>EVENT:(NATIONAL HEROES DAY,LoL Event And Other 1)</li>
+  
   <h3>UPDATE 2</h3>
-  <kbd>August 18 2024</kbd>
+  <kbd>August 16 2024</kbd>
   <li>Added Music Mute button added</li>
   <li>ADDED:[ENCHANTMENTS: Penaty, Protection, Entangle, Flame Striker ]</li>
   <li>Texture Fixing</li>
@@ -162,7 +164,41 @@
  
     </select>  
     </button>
-    <button class="buttonBSD" onclick="saveChanges">
+
+    <button class="buttonBSD">
+     <label>FPS GAME</label> 
+     <figure></figure>
+<select name="racist" id="racist">
+  <option value="">60 FPS DEFAULT</option>
+  <option value="">30 FPS </option>
+  <option value="">10 FPS </option>
+</select>
+    </button>
+    <button class="buttonBSD">
+    <label>Server</label>
+    <figure></figure>
+<select name="" id="">
+  <option value="">Server2</option>
+  <option disabled="" value="">Server1 ( Full )</option>
+  <option disabled=""value="">Server4 ( Full )</option>
+  <option disabled=""value="">Server3 ( Full )</option>
+  opt+
+</select>
+<figure></figure>
+</button>
+<button class="buttonBSD">
+  <label>Region</label>
+  <figure></figure>
+  <select name="region" id="region">
+    <option value="">Not Available</option>
+    <option value="" disabled="">Asia</option>
+  
+  </select>
+</button>
+<button class="buttonBSD">
+  Setting changes 
+</button>
+    <button class="buttonBSD" onclick="saveChanges()">
     Save Change
     </button>
   </center>
@@ -300,8 +336,52 @@
                 </button>
   </fieldset>
 </div>
-<script>
+<div id="eventpage">
+  <center>
+    <button class="buttonBSD" onclick="back100()">Back</button>
+  </center>
+<h1>EVENTS:</h1>
+<fieldset class="eventlol">
+  <h2>LoL Event</h2>
+  <p>LoL Event • Start:August 20 2024 - End: August 29 2024</p>
+  <p>Insert BCode and get coins ot items</p>
+  <p>You Can Get this Items:5K BCoins, Generator IV, Earth's Fragment, HLSIM Fragments, 10M Bcoins Flame Striker Enchantment, Secret Boss, Premuim(7 days), Entangle, 50M Bcoins.</p>
+ <label>BCode:</label>
+  <input type="password" >
+</fieldset>
+<fieldset class="normalcard">
+  <h2>Daily Me</h2>
+  <p>Daily Me • Start:August 20 2024 - End August 25 2024</p>
+  <p>redeem free Price</p>
+<center>
+  <p>Only Redeemable by Afk here in lobby for 10min. and per 10min random reward given to players</p>
+  <button id="reedem"onclick="reedemme()">Redeem</button>
+</center>
+</fieldset>
+<fieldset class="NNEvent">
+  <h2>National Heroes Day Event!</h2>
+  <kbd>Start:August 24 2024 - End:August: 26 2024</kbd>
+  <p>Happy Weekend hard player and students:)</p>
+  <fieldset class="normalcard">
+    <h1>🇵🇭Super Grinder🇵🇭</h1>
+    <button class="texture-tag-normal" style="background-color:yellow;">LEGENDARY</button>
+<button class="texture-tag-normal">LVL 1500</button> <button class="texture-tag-turrerts">Generator</button>
+   <p>LEGENDARY Philippines Generator </p>
+<button style="width:100%;" class="purchaseItem" id="BSD_PHGENERATOR" data-price="5.00090000" data-bits-per-sec="0.10000115">
 
+<h4 class="amountOfItem">0</h4>
+   
+         
+                    <h2 class="itemHeadline">Purchase</h2>
+                                  <p class="itemPrice">5.00090000 BCOIN Or 500$(Discounted 10% For First Purchased)</p>
+            
+                </button>
+  </fieldset>
+</fieldset>
+</div>
+<script>
+document.getElementById("reedem").style.display = "none"
+document.getElementById("eventpage").style.display = "none"
 document.getElementById("Settingsme").style.display = "none"
 document.getElementById("rankpage").style.display = "none"
 document.getElementById("details").style.display = "none"
@@ -313,7 +393,10 @@ function back3() {
 document.getElementById("pagemap2").style.display = "none"
   document.getElementById("mainpage").style.display = "block"
 }
-
+function reedeme() {
+document.getElementById("reedem").style.display = "none"
+alert("Redeemed:1x BCoins")
+}
 function joinmap() {
 document.getElementById("pagemap2").style.display = "block"
   document.getElementById("mainpage").style.display = "none"
@@ -326,6 +409,10 @@ document.getElementById("customcreateot").style.display = "block"
 function Rank() {
 document.getElementById("rankpage").style.display = "block"
   document.getElementById("mainpage").style.display = "none"
+}
+function back100() {
+document.getElementById("eventpage").style.display = "none"
+  document.getElementById("mainpage").style.display = "block"
 }
 function plain() {
     
@@ -344,7 +431,11 @@ document.getElementById("rankpage").style.display = "none"
 
   }
   }
-  
+  function event9() {
+document.getElementById("eventpage").style.display = "block"
+  document.getElementById("mainpage").style.display = "none"
+
+  }
 function Endless() {
 window.location.href = "https://klienreijioniwa.github.io/BSD/SERVER/Classic/CUSTOM/BSD.html"
 }
@@ -392,6 +483,11 @@ document.getElementById("enchantments").style.display = "none"
   document.getElementById("mainpage").style.display = "block"
 
 }
+
+window.onload = setTimeout(function(){
+document.getElementById("reedem").style.display = "block"
+alert("Daily Me: Reedem Award is here!!!")
+}, 1000000);
 </script>
 
 
@@ -423,6 +519,22 @@ background-color: grey;
   border: 0px;
   padding: 5px;
   color: white;
+}
+.NNEvent {
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9eO63RiLEY4UZj8BtKjGQl2w0d7OP_0hXAQ&amp;usqp=CAU");
+color: black;
+border-radius: 10px;
+border-color: orange;
+margin: 7px;
+align-self: center;
+}
+.eventlol {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDsuStoNQTRFr1hzPTYZdJQCTQreUXyydySfoFYwhU3GkRJ5nmAocj3EK1&amp;s=10");
+color: black;
+border-radius: 10px;
+border-color: orange;
+margin: 7px;
+align-self: center;
 }
 .texture-tag-normal {
   background-color: blue;
@@ -672,6 +784,11 @@ var items = [
    {
     "name": "BSD_GENERATOR3",
     "price": "5.00000000"
+
+  },
+   {
+    "name": "BSD_PHGENERATOR",
+    "price": "0.10000115"
 
   },
 ]
@@ -1171,44 +1288,3 @@ var audio = document.getElementById("audio_player_html5");
 </script>
 <audio hidden=""autoplay="" controls="" id="audio_player_html5" preload="auto" class="ab-center mejs-light" src="SERVER/music/lobby.mp3" type="audio/mp3"></audio>
 </html>
-
-<script>
-function setCookie(cname,cvalue,exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-     user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-     }
-  }
-}
-</script>
-</head>
-
-<body onload="checkCookie()"></body>
-
