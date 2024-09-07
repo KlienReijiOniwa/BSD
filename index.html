@@ -1289,12 +1289,11 @@ $(document).ready(function () {
 
 
 </script>
-<script type="text/javascript">
-window.onload=function(){
-var audio = document.getElementById("audio_player_html5");
-    audio.play();
-    console.log("music play")
+ <audio id="my_audio" src="SERVER/music/lobby.mp3" loop="loop" hidden=""></audio>
+
+<script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
 }
 </script>
-<audio hidden=""autoplay="" controls="" id="audio_player_html5" class="ab-center mejs-light" src="SERVER/music/lobby.mp3" type="audio/mp3"></audio>
 </html>
